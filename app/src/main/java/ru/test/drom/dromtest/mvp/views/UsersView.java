@@ -19,8 +19,6 @@ public interface UsersView extends MvpView {
 
     void hideProgress();
 
-    void hideError();
-
     void setRepositories(Repositories repositories, boolean maybeMore);
 
     @StateStrategyType(AddToEndStrategy.class)

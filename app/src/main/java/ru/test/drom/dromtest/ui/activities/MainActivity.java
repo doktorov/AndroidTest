@@ -188,9 +188,4 @@ public class MainActivity extends MvpAppCompatActivity implements UsersView,
     public void onCancel(DialogInterface dialogInterface) {
         mRepositoriesPresenter.onErrorCancel();
     }
-
-    @Override
-    public void hideError() {
-        String s = "";
-    }
 }
