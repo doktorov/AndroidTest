@@ -14,10 +14,10 @@ import ru.test.drom.dromtest.app.GithubApi;
 import ru.test.drom.dromtest.mvp.GithubService;
 import ru.test.drom.dromtest.mvp.common.RxUtils;
 import ru.test.drom.dromtest.mvp.models.Repositories;
-import ru.test.drom.dromtest.mvp.views.UsersView;
+import ru.test.drom.dromtest.mvp.views.RepositoriesView;
 
 @InjectViewState
-public class RepositoriesPresenter extends MvpPresenter<UsersView> {
+public class RepositoriesPresenter extends MvpPresenter<RepositoriesView> {
     @Inject
     Context mContext;
     @Inject
@@ -67,9 +67,5 @@ public class RepositoriesPresenter extends MvpPresenter<UsersView> {
 
     private void onLoadingFailed(String error) {
         getViewState().showError(error);
-    }
-
-    public void onErrorCancel() {
-        getViewState().hideError();
     }
 }

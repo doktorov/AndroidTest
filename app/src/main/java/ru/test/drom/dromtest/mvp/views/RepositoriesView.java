@@ -8,7 +8,7 @@ import com.arellomobile.mvp.viewstate.strategy.StateStrategyType;
 import ru.test.drom.dromtest.mvp.models.Repositories;
 
 @StateStrategyType(AddToEndSingleStrategy.class)
-public interface UsersView extends MvpView {
+public interface RepositoriesView extends MvpView {
     void showError(String message);
 
     void showListProgress();

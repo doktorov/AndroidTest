@@ -1,6 +1,5 @@
 package ru.test.drom.dromtest.ui.activities;
 
-import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -21,7 +20,7 @@ import ru.test.drom.dromtest.R;
 import ru.test.drom.dromtest.mvp.common.MvpAppCompatActivity;
 import ru.test.drom.dromtest.mvp.models.Repositories;
 import ru.test.drom.dromtest.mvp.presenters.RepositoriesPresenter;
-import ru.test.drom.dromtest.mvp.views.UsersView;
+import ru.test.drom.dromtest.mvp.views.RepositoriesView;
 import ru.test.drom.dromtest.ui.adapters.RepositoryAdapter;
 import ru.test.drom.dromtest.ui.listeners.OnScrollToBottomListener;
 
@@ -32,9 +31,8 @@ import ru.test.drom.dromtest.ui.listeners.OnScrollToBottomListener;
 полное название репозитория и его описание. Остальные поля можно добавить по желанию исполнителя.
 При скроллинге данные должны догружаться (ленивая подгрузка). Поворот экрана должен быть включен и корректно обработан. Исходный код должен быть на Java.»
  */
-public class MainActivity extends MvpAppCompatActivity implements UsersView,
-        OnScrollToBottomListener,
-        DialogInterface.OnCancelListener {
+public class MainActivity extends MvpAppCompatActivity implements RepositoriesView,
+        OnScrollToBottomListener {
     @InjectPresenter
     RepositoriesPresenter mRepositoriesPresenter;
 
@@ -182,10 +180,5 @@ public class MainActivity extends MvpAppCompatActivity implements UsersView,
     @Override
     public void onScrollToBottom() {
         mRepositoriesPresenter.loadNextRepositories(mQuery.toString(), mRepositoryAdapter.getItemCount());
-    }
-
-    @Override
-    public void onCancel(DialogInterface dialogInterface) {
-        mRepositoriesPresenter.onErrorCancel();
     }
 }
