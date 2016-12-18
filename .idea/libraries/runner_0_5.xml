@@ -2,6 +2,7 @@
   <library name="runner-0.5">
     <ANNOTATIONS>
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support.test/runner/0.5/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/15174f0ecb457a3328a55f3916ef44460a728b0e/output/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.android/build-cache/15174f0ecb457a3328a55f3916ef44460a728b0e/output/res" />

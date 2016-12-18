@@ -2,6 +2,7 @@
   <library name="support-core-utils-25.0.0">
     <ANNOTATIONS>
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/f7df1fcd4b763992ca4ab7451e8e2b3519d1f5d2/output/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.android/build-cache/f7df1fcd4b763992ca4ab7451e8e2b3519d1f5d2/output/jars/libs/internal_impl-25.0.0.jar!/" />

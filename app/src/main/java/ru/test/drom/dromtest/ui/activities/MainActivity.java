@@ -14,10 +14,10 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.arellomobile.mvp.MvpAppCompatActivity;
 import com.arellomobile.mvp.presenter.InjectPresenter;
 
 import ru.test.drom.dromtest.R;
-import ru.test.drom.dromtest.mvp.common.MvpAppCompatActivity;
 import ru.test.drom.dromtest.mvp.models.Repositories;
 import ru.test.drom.dromtest.mvp.presenters.RepositoriesPresenter;
 import ru.test.drom.dromtest.mvp.views.RepositoriesView;
