@@ -1,1 +1,1 @@
-# AndroidTest
+# Android test application for interview
